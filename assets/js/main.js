@@ -33,9 +33,3 @@ itemsFromAccordion.forEach(item => {
     }
   });
 });
-
-items.forEach(item=>{
-    item.addEventListener('click', e => {
-        item.parentElement.classList.toggle('is-open')
-    })
-})
