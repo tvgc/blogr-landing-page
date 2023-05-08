@@ -36,6 +36,7 @@
 .l-header .l-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /*-----------------------------------*\
@@ -43,6 +44,7 @@
 \*-----------------------------------*/
 .l-home {
     position: relative;
+    height: 60rem;
     background-image: linear-gradient(135deg, var(--gradient1) 0%, var(--gradient2) 100%);
 }
 

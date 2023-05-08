@@ -9,18 +9,17 @@ toggle.addEventListener('click', e => {
 
 // Seleciona todos os elementos com a classe "accordion-item" e armazena em uma variável
 const itemsFromAccordion = document.querySelectorAll('.js-item-box');
-const items = document.querySelectorAll('.js-item')
 
 // Itera sobre todos os itens selecionados
 itemsFromAccordion.forEach(item => {
   // Adiciona um evento de clique em cada item
   item.addEventListener('click', event => {
     // Verifica se o item clicado já possui a classe "is-open"
-    const isOpen = event.currentTarget.classList.contains('selected');
+    const isOpen = event.currentTarget.classList.contains('is-open');
 
     // Se já tiver a classe "is-open", remove-a
     if (isOpen) {
-        document.querySelectorAll('.js-item').forEach(item=>{
+        document.querySelectorAll('.js-item-box').forEach(item=>{
             event.currentTarget.classList.remove('is-open');
         })
       
